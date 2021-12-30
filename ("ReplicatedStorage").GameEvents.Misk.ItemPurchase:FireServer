@@ -5,7 +5,7 @@ eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
     local args = {...}
 
     if not checkcaller() and self.Name == "Utility" and method == "FireServer" then
-        print("Anti Cheat remote detected.")
+        print("BadMovement remote was detected and stoped.")
         return;
     end
 
