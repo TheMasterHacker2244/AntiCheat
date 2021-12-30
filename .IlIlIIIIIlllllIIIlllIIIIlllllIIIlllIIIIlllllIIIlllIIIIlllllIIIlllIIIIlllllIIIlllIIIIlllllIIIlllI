@@ -1,0 +1,13 @@
+local eventbypass
+
+eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+
+    if not checkcaller() and self.Name == "Utility" and method == "FireServer" then
+        print("Anti Cheat remote is blocked.")
+        return;
+    end
+
+    return eventbypass(self, ...)
+end)
