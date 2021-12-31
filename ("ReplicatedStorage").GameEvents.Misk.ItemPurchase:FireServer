@@ -11,3 +11,82 @@ eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
 
     return eventbypass(self, ...)
 end)
+local eventbypass
+--Main
+eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+
+    if not checkcaller() and self.Name == "BanReceived" and method == "FireServer" then
+        print("BanReceived remote was detected and has been stoped.")
+        return;
+    end
+
+    return eventbypass(self, ...)
+end)
+local eventbypass
+
+eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+--Bad Movement
+    if not checkcaller() and self.Name == "Utility" and method == "FireServer" then
+        print("Utility remote was detected and has been stoped.")
+        return;
+    end
+
+    return eventbypass(self, ...)
+end)
+local eventbypass
+
+eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+--Someimtes needed
+    if not checkcaller() and self.Name == "ToggleVoteKick" and method == "FireServer" then
+        print("ToggleVoteKick remote was detected and has been stoped.")
+        return;
+    end
+
+    return eventbypass(self, ...)
+end)
+local eventbypass
+
+eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+--Someimtes needed
+    if not checkcaller() and self.Name == "KickVote" and method == "FireServer" then
+        print("KickVote remote was detected and has been stoped.")
+        return;
+    end
+
+    return eventbypass(self, ...)
+end)
+local eventbypass
+
+eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+--Someimtes needed
+    if not checkcaller() and self.Name == "PromptKickVote" and method == "FireServer" then
+        print("PromptKickVote remote was detected and has been stoped.")
+        return;
+    end
+
+    return eventbypass(self, ...)
+end)
+
+local eventbypass
+
+eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+--Remove GUI
+    if not checkcaller() and self.Name == "PromptKickVote" and method == "FireServer" then
+        print("PromptKickVote remote was detected and has been stoped.")
+        return;
+    end
+
+    return eventbypass(self, ...)
+end)
