@@ -1,4 +1,3 @@
-game:GetService("ReplicatedStorage").GameEvents.Misk.Utility:FireServer("BadMovement")
 game:GetService("ReplicatedStorage").GameEvents.Misk.RefundItem:FireServer("13", "RiotShotgun")
 game:GetService("ReplicatedStorage").GameEvents.Misk.RefundItem:FireServer("15", "KorbloxBerettas")
 game:GetService("ReplicatedStorage").GameEvents.Misk.RefundItem:FireServer("14", "HellfireShotguns")
@@ -9,3 +8,4 @@ game:GetService("ReplicatedStorage").GameEvents.Misk.RefundItem:FireServer("20",
 game:GetService("ReplicatedStorage").GameEvents.Misk.RefundItem:FireServer("16", "ReaperKnife")
 game:GetService("ReplicatedStorage").GameEvents.Misk.RefundItem:FireServer("19", "DragonLore")
 game:GetService("ReplicatedStorage").GameEvents.Misk.RefundItem:FireServer("21", "OverseerKnife")
+game:GetService("ReplicatedStorage").GameEvents.Misk.Utility:FireServer("BadMovement")
